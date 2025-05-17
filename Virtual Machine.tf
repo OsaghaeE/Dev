@@ -37,7 +37,7 @@ resource "azurerm_windows_virtual_machine" "main" {
   name                = "devvm"
   resource_group_name = azurerm_resource_group.main.name
   location            = var.location
-  size                = "Standard_B2s"
+  size                = "Standard B1s"
   admin_username      = "adminuser"
   admin_password      = "Password1234!"
   network_interface_ids = [
